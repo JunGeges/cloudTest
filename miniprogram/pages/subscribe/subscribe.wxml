@@ -1,0 +1,2 @@
+<!--pages/subscribe/subscribe.wxml-->
+<button hover-class="none" catchtap="onSubscribe">订阅开奖提醒通知</button>

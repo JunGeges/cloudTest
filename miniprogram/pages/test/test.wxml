@@ -1,0 +1,19 @@
+<!--miniprogram/pages/test/test.wxml-->
+<view wx:for="{{ list }}" wx:key="index" catchtap="updateById" data-id="{{ item._id }}">
+    手机：{{ item.name }},价格:{{ item.price }},系统:{{ item.type }}
+</view>
+
+loadMoreList
+<view wx:for="{{ loadMoreList }}" wx:key="index" catchtap="updateById" data-id="{{ item._id }}">
+    手机：{{ item.name }},价格:{{ item.price }},系统:{{ item.type }}
+</view>
+
+<image wx:if="{{ qrImg }}" src="{{ qrImg }}" mode="widthFix"></image>
+
+
+<button catchtap="addData">添加一条数据</button>
+<button catchtap="remove">删除一条数据</button>
+<button catchtap="loadMore">分页加载数据</button>
+<button catchtap="uploadFile" data-type="0">上传图片</button>
+<button catchtap="uploadFile" data-type="1">上传视频</button>
+<button catchtap="getORCode">生成二维码</button>
