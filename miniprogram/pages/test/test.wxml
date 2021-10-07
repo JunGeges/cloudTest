@@ -5,7 +5,7 @@
 
 loadMoreList
 <view wx:for="{{ loadMoreList }}" wx:key="index" catchtap="updateById" data-id="{{ item._id }}">
-    手机：{{ item.name }},价格:{{ item.price }},系统:{{ item.type }}
+    手机：{{ item.name }},价格:{{ item.price }},系统:{{ item.type }}-
 </view>
 
 <image wx:if="{{ qrImg }}" src="{{ qrImg }}" mode="widthFix"></image>
